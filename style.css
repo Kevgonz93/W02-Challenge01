@@ -1,0 +1,146 @@
+# {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+}
+
+body {
+  font-family: "league spartan";
+  font-size: 15px;
+  color: hsl(300, 43%, 22%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 2rem;
+  gap: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: 5rem;
+  margin-block: 2rem;
+  gap: 1rem;
+  padding-block: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.title {
+  text-align: center;
+}
+.rated {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  .r1,
+  .r2,
+  .r3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+    background-color: hsl(303, 24%, 96%);
+    border-radius: 20px;
+  }
+}
+
+@media (width > 800px) {
+  main {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin-inline: 0;
+    margin-block: 0;
+  }
+  .title {
+    width: 30%;
+    text-align: start;
+  }
+  .rated {
+    width: 30%;
+  }
+  .r1,
+  .r2,
+  .r3 {
+    flex-direction: row;
+  }
+  .r2 {
+    position: relative;
+    left: 2.5rem;
+  }
+  .r3 {
+    position: relative;
+    left: 5rem;
+  }
+}
+
+img.coments {
+  border-radius: 100px;
+}
+
+section.coments {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-inline: 5rem;
+}
+
+article {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background-color: hsl(300, 43%, 22%);
+  color: white;
+  border-radius: 20px;
+}
+
+.buyers {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 80%;
+  p {
+    color: hsl(333, 80%, 67%);
+  }
+}
+
+@media (width > 800px) {
+  section.coments {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-inline: 10rem;
+    width: 90%;
+    article {
+      height: 100%;
+    }
+  }
+  article.irene {
+    position: relative;
+    top: 2.5rem;
+  }
+  article.anne {
+    position: relative;
+    top: 5rem;
+  }
+}
